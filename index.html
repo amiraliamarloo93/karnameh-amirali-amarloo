@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>کارنامه تشخیصی امیرعلی عمارلو</title>
+  <title>امیرعلی عمارلو · کارنامه‌های هوش</title>
   <meta name="theme-color" content="#1f3a4d" />
+  <meta name="description" content="صفحه شخصی امیرعلی عمارلو - کارنامه‌های تشخیصی آزمون هوش و پیشرفت تحصیلی" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -21,6 +22,7 @@
             muted: "#7a7268",
             line: "#d4cbb8",
             navy: "#1f3a4d",
+            "navy-2": "#2c536b",
             ok: "#2f6b4f",
             "ok-bg": "#e4efe8",
             bad: "#8b3a32",
@@ -33,172 +35,133 @@
   </script>
   <style>
     body { margin: 0; font-family: "Vazirmatn", Tahoma, sans-serif; background: #f3eee4; color: #1c1916; line-height: 1.65; }
-    .photo-frame { box-shadow: 0 4px 16px rgba(31,58,77,0.18), 0 0 0 3px #fff, 0 0 0 5px #d4cbb8; }
+    .photo-frame { box-shadow: 0 4px 20px rgba(31,58,77,0.18), 0 0 0 4px #fff, 0 0 0 6px #d4cbb8; }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(28,25,22,0.12); }
   </style>
 </head>
 <body class="font-sans antialiased">
-  <main class="min-h-screen bg-paper px-4 py-6 sm:py-10 text-ink sm:px-6">
-    <article class="mx-auto max-w-3xl rounded-2xl border border-line bg-paper p-5 sm:p-8 shadow-[0_12px_40px_rgba(28,25,22,0.08)]">
-      
-      <header class="border-b border-line pb-6">
-        <div class="flex flex-col sm:flex-row gap-5 sm:gap-6 items-center sm:items-start">
+  <main class="min-h-screen bg-paper px-4 py-8 sm:py-12 text-ink sm:px-6">
+    <div class="mx-auto max-w-3xl">
+
+      <!-- Hero / About -->
+      <section class="rounded-2xl border border-line bg-paper p-6 sm:p-8 shadow-[0_12px_40px_rgba(28,25,22,0.08)] mb-8">
+        <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
           <div class="shrink-0">
-            <img src="https://lh3.googleusercontent.com/d/1oLynLJCS8iVXvtJsPz1AyO5nFc1Gd1S8=w400" alt="امیرعلی عمارلو" class="w-28 h-36 sm:w-32 sm:h-40 object-cover rounded-xl photo-frame" loading="lazy" />
+            <img src="https://lh3.googleusercontent.com/d/1oLynLJCS8iVXvtJsPz1AyO5nFc1Gd1S8=w400" 
+                 alt="امیرعلی عمارلو" 
+                 class="w-32 h-40 sm:w-36 sm:h-44 object-cover rounded-xl photo-frame" 
+                 loading="lazy" />
           </div>
           <div class="flex-1 text-center sm:text-right">
-            <p class="text-xs font-medium tracking-wide text-muted">گزارش تشخیصی مدرس هوش · فرم C · آزمون سال ۱۴۰۵</p>
-            <h1 class="mt-1.5 text-2xl sm:text-3xl font-semibold text-navy leading-tight">کارنامهٔ امیرعلی عمارلو</h1>
-            <p class="mt-2 text-sm text-ink-soft">تمرین آزمون ورودی پایه هفتم سمپاد ۱۴۰۵–۱۴۰۶ · هدف واقعی: آزمون ۱۴۰۶</p>
-            <div class="mt-3 flex flex-wrap justify-center sm:justify-start gap-2 text-xs">
-              <span class="inline-flex items-center rounded-full bg-paper-2 px-3 py-1 text-ink-soft border border-line">پایه پنجم</span>
-              <span class="inline-flex items-center rounded-full bg-paper-2 px-3 py-1 text-ink-soft border border-line">بجنورد</span>
-              <span class="inline-flex items-center rounded-full bg-navy text-paper px-3 py-1">هیوا هوش · علیرضا راعی</span>
+            <p class="text-xs font-medium tracking-wide text-muted">صفحه شخصی دانش‌آموز</p>
+            <h1 class="mt-1 text-2xl sm:text-3xl font-semibold text-navy leading-tight">امیرعلی عمارلو</h1>
+            <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+              پایه پنجم · مدرسه شاهد حضرت رسول اکرم (ص) · بجنورد<br>
+              کلاس هوش: <span class="font-medium text-navy">هیوا هوش · استاد علیرضا راعی</span>
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center sm:justify-start gap-2 text-xs">
+              <span class="inline-flex items-center rounded-full bg-paper-2 px-3 py-1.5 text-ink-soft border border-line">تولد ۱۳۹۳/۰۲/۲۱</span>
+              <span class="inline-flex items-center rounded-full bg-navy text-paper px-3 py-1.5">هدف: تیزهوشان ۱۴۰۶</span>
             </div>
           </div>
         </div>
-      </header>
 
-      <section class="mt-6 grid gap-4 sm:grid-cols-2">
-        <div class="rounded-xl border border-line bg-paper-2 p-4 sm:p-5">
-          <h2 class="text-sm font-semibold text-navy mb-3">مشخصات دانش‌آموز</h2>
-          <dl class="space-y-2 text-sm">
-            <div class="flex justify-between gap-3"><dt class="text-muted">نام</dt><dd class="font-medium">امیرعلی عمارلو</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-muted">پایه</dt><dd class="font-medium">پنجم ابتدایی</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-muted">تولد</dt><dd class="font-medium">۱۳۹۳/۰۲/۲۱</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-muted">شهر</dt><dd class="font-medium">بجنورد، خیابان بهارک</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-muted">مدرسه</dt><dd class="font-medium">شاهد حضرت رسول اکرم (ص)</dd></div>
-          </dl>
-        </div>
-        <div class="rounded-xl border border-line bg-navy p-4 sm:p-5 text-paper flex flex-col justify-center">
-          <h2 class="text-sm font-semibold opacity-90">نمرهٔ کل وزنی</h2>
-          <p class="mt-2 font-semibold tabular-nums text-5xl sm:text-6xl leading-none">۳۶٫۴٪</p>
-          <p class="mt-3 text-sm text-paper/80">دفترچهٔ ۱ ضریب ۳ · دفترچهٔ ۲ ضریب ۱</p>
-          <p class="mt-2 text-xs text-paper/60">این آزمون سال قبل است. امیرعلی یک سال زودتر زده؛ عدد قبولی ۱۴۰۶ نیست.</p>
-        </div>
-      </section>
-
-      <section class="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <div class="rounded-xl border border-line bg-paper p-4 text-center sm:text-right">
-          <div class="text-xs font-medium text-muted">درست</div>
-          <div class="mt-1 font-semibold tabular-nums text-2xl text-navy">۶۴</div>
-          <div class="text-xs text-ink-soft">از ۱۲۰ سؤال</div>
-        </div>
-        <div class="rounded-xl border border-line bg-paper p-4 text-center sm:text-right">
-          <div class="text-xs font-medium text-muted">غلط</div>
-          <div class="mt-1 font-semibold tabular-nums text-2xl text-navy">۲۸</div>
-          <div class="text-xs text-ink-soft">نمرهٔ منفی</div>
-        </div>
-        <div class="rounded-xl border border-line bg-paper p-4 text-center sm:text-right">
-          <div class="text-xs font-medium text-muted">نزده</div>
-          <div class="mt-1 font-semibold tabular-nums text-2xl text-navy">۲۸</div>
-          <div class="text-xs text-ink-soft">سفید = صفر</div>
-        </div>
-        <div class="rounded-xl border border-line bg-paper p-4 text-center sm:text-right">
-          <div class="text-xs font-medium text-muted">خام کل</div>
-          <div class="mt-1 font-semibold tabular-nums text-2xl text-navy">۲۶۲</div>
-          <div class="text-xs text-ink-soft">از ۷۲۰ وزنی</div>
-        </div>
-      </section>
-
-      <section class="mt-8">
-        <h2 class="text-base font-semibold text-navy mb-3">دو دفترچه</h2>
-        <div class="grid gap-4 sm:grid-cols-2">
-          <div class="rounded-xl border border-line p-4 sm:p-5">
-            <div class="flex items-center justify-between gap-2">
-              <h3 class="font-semibold">دفترچه ۱ · تحلیلی</h3>
-              <span class="inline-flex rounded-full px-2.5 py-1 text-xs font-medium bg-bad-bg text-bad">ضریب ۳</span>
-            </div>
-            <p class="mt-3 font-semibold tabular-nums text-3xl text-navy">۲۷٫۲٪</p>
-            <div class="mt-3 h-2.5 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-bad" style="width:27.2%"></div></div>
-            <p class="mt-3 text-sm text-ink-soft">۲۳ درست · ۲۰ غلط · ۱۷ نزده</p>
-            <p class="mt-2 text-xs text-muted">اگر ۲۰ غلط سفید می‌ماند، درصد می‌شد ۳۸٫۳٪. حدس اینجا گران تمام شد.</p>
+        <!-- Quick summary -->
+        <div class="mt-6 pt-6 border-t border-line grid gap-4 sm:grid-cols-3 text-sm">
+          <div class="rounded-xl bg-paper-2 p-4 border border-line">
+            <div class="text-xs text-muted mb-1">آخرین آزمون</div>
+            <div class="font-semibold text-navy">فرم C · ۱۴۰۵</div>
+            <div class="text-xs text-ink-soft mt-1">نمره کل وزنی ۳۶٫۴٪</div>
           </div>
-          <div class="rounded-xl border border-line p-4 sm:p-5">
-            <div class="flex items-center justify-between gap-2">
-              <h3 class="font-semibold">دفترچه ۲ · سرعت و دقت</h3>
-              <span class="inline-flex rounded-full px-2.5 py-1 text-xs font-medium bg-ok-bg text-ok">ضریب ۱</span>
-            </div>
-            <p class="mt-3 font-semibold tabular-nums text-3xl text-navy">۶۳٫۹٪</p>
-            <div class="mt-3 h-2.5 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-ok" style="width:63.9%"></div></div>
-            <p class="mt-3 text-sm text-ink-soft">۴۱ درست · ۸ غلط · ۱۱ نزده</p>
-            <p class="mt-2 text-xs text-muted">این دفترچه نقطهٔ قوت است. قبولی را دفترچهٔ ضریب ۳ تعیین می‌کند.</p>
+          <div class="rounded-xl bg-ok-bg p-4 border border-line">
+            <div class="text-xs text-ok mb-1">نقطه قوت اصلی</div>
+            <div class="font-semibold text-ink">دفترچه سرعت و دقت</div>
+            <div class="text-xs text-ink-soft mt-1">۶۳٫۹٪ · املا و نقشه</div>
+          </div>
+          <div class="rounded-xl bg-bad-bg p-4 border border-line">
+            <div class="text-xs text-bad mb-1">نیاز به کار</div>
+            <div class="font-semibold text-ink">دفترچه تحلیلی</div>
+            <div class="text-xs text-ink-soft mt-1">هوش کلامی · شکل تو‌درتو</div>
           </div>
         </div>
       </section>
 
-      <section class="mt-8">
-        <h2 class="text-base font-semibold text-navy mb-3">تیپ‌به‌تیپ دفترچهٔ ۲</h2>
-        <ul class="divide-y divide-line rounded-xl border border-line overflow-hidden">
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">غلط املایی</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-ok" style="width:100%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۵ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">قوت اصلی</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">کلمهٔ مشترک</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-ok" style="width:100%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۵ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">قوت اصلی</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">نقشه و همسایگی</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-ok" style="width:100%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۵ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">قوت اصلی</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">ساخت واژه از حروف</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-ok" style="width:100%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۵ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">قوت اصلی</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">رمز جدول</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-ok" style="width:80%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۴ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">یک نزده</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">جای خالی و دستور</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-ok" style="width:80%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۴ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">زمان فعل</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">وارون کلمه</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-navy" style="width:60%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۳ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">یک غلط، یک نزده</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">بخش‌پذیری</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-bad" style="width:40%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۲ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">سه نزدهٔ آخر</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">برخورد شکل</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-bad" style="width:40%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۲ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">فرمول خط‌ها</div></li>
-          <li class="flex items-center gap-3 px-4 py-3 bg-paper"><div class="w-32 sm:w-36 shrink-0 text-sm font-medium">شکل تو‌درتو</div><div class="min-w-0 flex-1"><div class="h-2 w-full overflow-hidden rounded-full bg-paper-2"><div class="h-full rounded-full bg-bad" style="width:0%"></div></div></div><div class="w-14 text-left text-xs tabular-nums text-ink-soft">۰ از ۵</div><div class="hidden w-28 text-xs text-muted sm:block">ضعف جدی</div></li>
-        </ul>
+      <!-- Exams menu -->
+      <section class="mb-8">
+        <h2 class="text-lg font-semibold text-navy mb-4">کارنامه‌های آزمون</h2>
+        
+        <div class="grid gap-4">
+          <!-- 1405 Card -->
+          <a href="1405/" class="card-hover block rounded-2xl border border-line bg-paper p-5 sm:p-6 shadow-[0_8px_30px_rgba(28,25,22,0.06)]">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="inline-flex items-center rounded-full bg-navy text-paper text-xs font-medium px-2.5 py-1">۱۴۰۵</span>
+                  <span class="text-xs text-muted">فرم C · شهریور</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-semibold text-navy">آزمون ورودی پایه هفتم سمپاد (تمرین)</h3>
+                <p class="mt-1.5 text-sm text-ink-soft">هدف واقعی: آزمون ۱۴۰۶ · یک سال زودتر شرکت کرده</p>
+                
+                <div class="mt-4 flex flex-wrap gap-3 text-sm">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-muted">نمره کل:</span>
+                    <span class="font-semibold text-navy tabular-nums">۳۶٫۴٪</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-muted">تحلیلی:</span>
+                    <span class="font-semibold text-bad tabular-nums">۲۷٫۲٪</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-muted">سرعت:</span>
+                    <span class="font-semibold text-ok tabular-nums">۶۳٫۹٪</span>
+                  </div>
+                </div>
+              </div>
+              <div class="shrink-0 text-navy text-xl sm:text-2xl opacity-60">←</div>
+            </div>
+          </a>
+
+          <!-- 1406 Placeholder -->
+          <div class="rounded-2xl border border-dashed border-line bg-paper-2/50 p-5 sm:p-6">
+            <div class="flex items-start justify-between gap-4">
+ imp_exams              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="inline-flex items-center rounded-full bg-paper-2 text-muted text-xs font-medium px-2.5 py-1 border border-line">۱۴۰۶</span>
+                  <span class="text-xs text-muted">به‌زودی</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-semibold text-muted">آزمون ورودی پایه هفتم سمپاد ۱۴۰۶</h3>
+                <p class="mt-1.5 text-sm text-muted">کارنامه این آزمون بعد از برگزاری اضافه خواهد شد.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="mt-8 grid gap-4 sm:grid-cols-2">
-        <div class="rounded-xl border border-line bg-ok-bg p-4 sm:p-5">
-          <h2 class="text-sm font-semibold text-ok mb-2">قوت‌ها</h2>
+      <!-- Strengths & Focus areas (summary that can be updated) -->
+      <section class="grid gap-4 sm:grid-cols-2 mb-8">
+        <div class="rounded-2xl border border-line bg-ok-bg p-5">
+          <h2 class="text-sm font-semibold text-ok mb-3">قوت‌های کلی</h2>
           <ul class="list-disc space-y-1.5 pr-4 text-sm text-ink">
-            <li>املا، کلمهٔ مشترک، نقشه، حروف واژه: تقریباً کامل</li>
-            <li>رمز جدول را سریع فهمید</li>
-            <li>کمپلکس مبحث ۹۳ دنباله: حدود ۸۵٪ بعد از کلید</li>
-            <li>نزده‌های دفترچهٔ ۲ اغلب آخرِ بلوک بود، نه بی‌نظمی</li>
+            <li>املا، کلمه مشترک، نقشه و ساخت واژه</li>
+            <li>دفترچه سرعت و دقت (نمره خوب)</li>
+            <li>رمز جدول و کمپلکس دنباله</li>
           </ul>
         </div>
-        <div class="rounded-xl border border-line bg-bad-bg p-4 sm:p-5">
-          <h2 class="text-sm font-semibold text-bad mb-2">ضعف‌ها</h2>
+        <div class="rounded-2xl border border-line bg-bad-bg p-5">
+          <h2 class="text-sm font-semibold text-bad mb-3">تمرکز فعلی</h2>
           <ul class="list-disc space-y-1.5 pr-4 text-sm text-ink">
-            <li>دفترچهٔ تحلیلی کلامی (مفهوم، بیت، هم‌خانواده)</li>
-            <li>برخورد خط و دایره: تقاطع خط‌ها را جا انداخت</li>
-            <li>شکل تو‌درتو (چاقالو / لاغرو): صفر از پنج</li>
-            <li>۲۰ غلط دفترچهٔ ۱ نمرهٔ منفی سنگین ساخت</li>
+            <li>هوش کلامی و دفترچه تحلیلی</li>
+            <li>شکل تو‌درتو و برخورد خط/دایره</li>
+            <li>قانون سفیدگذاشتن (کاهش غلط)</li>
           </ul>
         </div>
       </section>
 
-      <section class="mt-8 rounded-xl border border-line p-4 sm:p-5 bg-paper-2/50">
-        <h2 class="text-sm font-semibold text-navy mb-2">حکم مدرس</h2>
-        <p class="text-sm leading-7 text-ink-soft">
-          امیرعلی برای کلاس پنجم، دفترچهٔ سرعت را در سطح قابل قبول زده است.
-          فاصله تا تیزهوشان ۱۴۰۶ در دفترچهٔ استعداد تحلیلی است، نه در هوش ریاضی
-          خام. مسیر تا آزمون: هوش کلامی هر روز، قانون «اگر دو گزینه ماندی سفید
-          بگذار»، فرمول برخورد شکل، و شمارش شکل تو‌درتو با زمان. کلاس راعی و
-          کمپلکس را نگه دار؛ اسمارتیز را وقتی گروهی خریدید کنارش بگذار.
-        </p>
-      </section>
-
-      <section class="mt-6">
-        <h2 class="text-sm font-semibold text-navy mb-3">کار تا شروع مهر</h2>
-        <div class="overflow-x-auto rounded-xl border border-line">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="bg-paper-2 text-right text-muted">
-                <th class="py-2.5 px-4 font-medium">اولویت</th>
-                <th class="py-2.5 px-4 font-medium">کار</th>
-                <th class="py-2.5 px-4 font-medium">چرا</th>
-              </tr>
-            </thead>
-            <tbody class="text-ink">
-              <tr class="border-t border-line"><td class="py-2.5 px-4 font-medium">۱</td><td class="py-2.5 px-4">هوش کلامی · مینی‌کمپلکس</td><td class="py-2.5 px-4 text-ink-soft">ضریب ۳ دفترچهٔ اول</td></tr>
-              <tr class="border-t border-line"><td class="py-2.5 px-4 font-medium">۲</td><td class="py-2.5 px-4">قانون سفیدگذاشتن</td><td class="py-2.5 px-4 text-ink-soft">۲۰ غلط = ۸ درست سوخته</td></tr>
-              <tr class="border-t border-line"><td class="py-2.5 px-4 font-medium">۳</td><td class="py-2.5 px-4">برخورد خط / دایره</td><td class="py-2.5 px-4 text-ink-soft">۶۸ تا ۷۰ غلط بود</td></tr>
-              <tr class="border-t border-line"><td class="py-2.5 px-4 font-medium">۴</td><td class="py-2.5 px-4">چاقالو و لاغرو زمان‌دار</td><td class="py-2.5 px-4 text-ink-soft">بلوک ۹۶ تا ۱۰۰ قفل شد</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <footer class="mt-8 border-t border-line pt-4 text-xs text-muted text-center sm:text-right">
-        تصحیح با کلید رسمی فرم C · نمرهٔ منفی ۳+ / ۱− · تاریخ گزارش: شهریور ۱۴۰۵
+      <footer class="text-center text-xs text-muted pt-4 border-t border-line">
+        صفحه شخصی امیرعلی عمارلو · به‌روزرسانی: شهریور ۱۴۰۵
       </footer>
-    </article>
+    </div>
   </main>
 </body>
 </html>
