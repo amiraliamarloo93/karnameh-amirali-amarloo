@@ -41,7 +41,6 @@
     @media (min-width: 640px) {
       .stamp { font-size: 2.25rem; padding: 0.4rem 1.5rem; }
     }
-    /* A4-like page */
     .a4-page {
       width: 100%;
       max-width: 210mm;
@@ -73,7 +72,6 @@
 
     <article class="a4-page rounded-xl border border-line bg-paper p-4 sm:p-7 shadow-[0_12px_40px_rgba(28,25,22,0.08)]" id="report">
       
-      <!-- Status stamp -->
       <div class="flex justify-center mb-4 sm:mb-5">
         <div class="stamp">قبول شده</div>
       </div>
@@ -185,16 +183,15 @@
       </footer>
     </article>
 
-    <!-- Separate buttons -->
     <div class="a4-page mt-5 flex flex-wrap justify-center gap-3 no-print">
       <button onclick="window.print()" class="inline-flex items-center gap-2 rounded-full bg-navy text-paper font-semibold text-sm px-5 py-2.5 shadow-md hover:bg-[#2c536b] transition">
         🖨️ چاپ کارنامه
       </button>
-      <button onclick="window.print()" class="inline-flex items-center gap-2 rounded-full border-2 border-navy text-navy font-semibold text-sm px-5 py-2.5 hover:bg-navy hover:text-paper transition">
+      <a href="https://litter.catbox.moe/kulev7.pdf" download="karnameh-1405-amirali.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border-2 border-navy text-navy font-semibold text-sm px-5 py-2.5 hover:bg-navy hover:text-paper transition">
         ⬇️ دانلود PDF
-      </button>
+      </a>
     </div>
-    <p class="a4-page mt-2 text-center text-xs text-muted no-print">در پنجره چاپ، «ذخیره به عنوان PDF» را انتخاب کنید</p>
+    <p class="a4-page mt-2 text-center text-xs text-muted no-print">فایل PDF حرفه‌ای و زیبا · آماده چاپ A4</p>
   </main>
 </body>
 </html>
