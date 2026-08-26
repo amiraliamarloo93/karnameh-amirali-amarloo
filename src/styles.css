@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap");
+
+@theme {
+  --font-sans: "Vazirmatn", Tahoma, sans-serif;
+  --color-paper: #f3eee4;
+  --color-paper-2: #ebe4d6;
+  --color-ink: #1c1916;
+  --color-ink-soft: #4a433c;
+  --color-muted: #7a7268;
+  --color-line: #d4cbb8;
+  --color-navy: #1f3a4d;
+  --color-navy-2: #2c536b;
+  --color-ok: #2f6b4f;
+  --color-ok-bg: #e4efe8;
+  --color-bad: #8b3a32;
+  --color-bad-bg: #f3e6e3;
+  --color-skip: #6b5d3e;
+  --color-skip-bg: #efe8d8;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+@layer base {
+  html {
+    direction: rtl;
+  }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
