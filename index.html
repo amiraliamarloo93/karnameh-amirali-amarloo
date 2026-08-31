@@ -32,17 +32,14 @@
   <main class="min-h-screen bg-paper px-4 py-6 sm:py-10 text-ink sm:px-6">
     <div class="mx-auto max-w-3xl">
 
-      <!-- Top bar: Hiva Hoosh on visual left, outside student box -->
       <div class="flex justify-end mb-4">
         <a href="hiva-hoosh.html" class="inline-flex items-center gap-2 rounded-full bg-navy text-paper text-xs sm:text-sm font-medium px-4 py-2 shadow-md hover:bg-[#2c536b] transition">
           🎯 هیوا هوش
         </a>
       </div>
 
-      <!-- Student specs -->
       <section class="rounded-2xl border border-line bg-paper p-5 sm:p-7 shadow-[0_12px_40px_rgba(28,25,22,0.08)] mb-8">
         <h1 class="text-xl sm:text-2xl font-semibold text-navy text-center mb-5">صفحه شخصی تحصیلی امیرعلی عمارلو</h1>
-        
         <div class="rounded-xl border border-line bg-paper-2 p-4 sm:p-5">
           <h2 class="text-sm font-semibold text-navy mb-4 border-b border-line pb-2">مشخصات دانش‌آموز</h2>
           <dl class="space-y-3 text-sm">
@@ -60,30 +57,49 @@
         </div>
       </section>
 
-      <!-- Exams -->
       <section class="mb-8">
         <h2 class="text-lg font-semibold text-navy mb-4">کارنامه‌های آزمون</h2>
-        <a href="1405/" class="card-hover block rounded-2xl border border-line bg-paper p-5 sm:p-6 shadow-[0_8px_30px_rgba(28,25,22,0.06)]">
-          <div class="flex items-start justify-between gap-4">
-            <div class="flex-1">
-              <div class="flex items-center gap-2 mb-1">
-                <span class="inline-flex items-center rounded-full bg-navy text-paper text-xs font-medium px-2.5 py-1">۱۴۰۵</span>
-                <span class="text-xs text-muted">فرم C · شهریور</span>
+        <div class="grid gap-4">
+
+          <!-- Maz 1405 - pending -->
+          <a href="maz-1405/" class="card-hover block rounded-2xl border border-dashed border-navy/40 bg-paper p-5 sm:p-6 shadow-[0_8px_30px_rgba(28,25,22,0.04)]">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <span class="inline-flex items-center rounded-full bg-navy/10 text-navy text-xs font-medium px-2.5 py-1 border border-navy/20">تابستان ۱۴۰۵</span>
+                  <span class="inline-flex items-center rounded-full bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1">به‌زودی</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-semibold text-navy">آزمون ماز · پایه ششم</h3>
+                <p class="mt-1.5 text-sm text-ink-soft">دفترچه ۱ و ۲ · تمرین · نتیجه پس از تصحیح اضافه می‌شود</p>
+                <div class="mt-4 text-sm text-muted">آماده دریافت نتیجه و کارنامه کامل</div>
               </div>
-              <h3 class="text-base sm:text-lg font-semibold text-navy">آزمون ورودی پایه هفتم سمپاد (تمرین)</h3>
-              <p class="mt-1.5 text-sm text-ink-soft">هدف واقعی: آزمون ۱۴۰۶ · یک سال زودتر شرکت کرده</p>
-              <div class="mt-4 flex flex-wrap gap-3 text-sm">
-                <span class="text-muted">نمره کل: <strong class="text-navy tabular-nums">۳۶٫۴٪</strong></span>
-                <span class="text-muted">تحلیلی: <strong class="text-bad tabular-nums">۲۷٫۲٪</strong></span>
-                <span class="text-muted">سرعت: <strong class="text-ok tabular-nums">۶۳٫۹٪</strong></span>
-              </div>
+              <div class="shrink-0 text-navy text-xl opacity-40">←</div>
             </div>
-            <div class="shrink-0 text-navy text-xl opacity-60">←</div>
-          </div>
-        </a>
+          </a>
+
+          <!-- Sampad 1405 -->
+          <a href="1405/" class="card-hover block rounded-2xl border border-line bg-paper p-5 sm:p-6 shadow-[0_8px_30px_rgba(28,25,22,0.06)]">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="inline-flex items-center rounded-full bg-navy text-paper text-xs font-medium px-2.5 py-1">۱۴۰۵</span>
+                  <span class="text-xs text-muted">فرم C · شهریور</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-semibold text-navy">آزمون ورودی پایه هفتم سمپاد (تمرین)</h3>
+                <p class="mt-1.5 text-sm text-ink-soft">هدف واقعی: آزمون ۱۴۰۶ · یک سال زودتر شرکت کرده</p>
+                <div class="mt-4 flex flex-wrap gap-3 text-sm">
+                  <span class="text-muted">نمره کل: <strong class="text-navy tabular-nums">۳۶٫۴٪</strong></span>
+                  <span class="text-muted">تحلیلی: <strong class="text-bad tabular-nums">۲۷٫۲٪</strong></span>
+                  <span class="text-muted">سرعت: <strong class="text-ok tabular-nums">۶۳٫۹٪</strong></span>
+                </div>
+              </div>
+              <div class="shrink-0 text-navy text-xl opacity-60">←</div>
+            </div>
+          </a>
+
+        </div>
       </section>
 
-      <!-- Progress button -->
       <div class="text-center mb-10">
         <a href="progress.html" class="inline-flex items-center gap-2 rounded-full bg-navy text-paper font-semibold text-sm sm:text-base px-6 py-3.5 shadow-lg hover:bg-[#2c536b] transition">
           📊 نمودار پیشرفت تحصیلی
