@@ -26,6 +26,18 @@
     body { margin: 0; font-family: "Vazirmatn", Tahoma, sans-serif; background: #f3eee4; color: #1c1916; line-height: 1.65; }
     .card-hover { transition: transform .2s, box-shadow .2s; }
     .card-hover:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(28,25,22,.12); }
+    /* لیست آزمون‌ها وقتی زیاد شد اسکرول می‌شود */
+    .exam-list {
+      max-height: min(70vh, 520px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    .exam-list::-webkit-scrollbar { width: 6px; }
+    .exam-list::-webkit-scrollbar-track { background: transparent; }
+    .exam-list::-webkit-scrollbar-thumb { background: #d4cbb8; border-radius: 999px; }
   </style>
 </head>
 <body class="font-sans antialiased">
@@ -59,25 +71,26 @@
 
       <section class="mb-8">
         <h2 class="text-lg font-semibold text-navy mb-4">کارنامه‌های آزمون</h2>
-        <div class="grid gap-4">
 
-          <!-- Maz 1405 - pending -->
-          <a href="maz-1405/" class="card-hover block rounded-2xl border border-dashed border-navy/40 bg-paper p-5 sm:p-6 shadow-[0_8px_30px_rgba(28,25,22,0.04)]">
+        <!-- لیست اسکرول‌پذیر برای وقتی آزمون‌ها زیاد شدند -->
+        <div class="exam-list grid gap-4">
+
+          <!-- ماز ۱۴۰۵ — هنوز آزمون زده نشده؛ بدون لینک -->
+          <div class="rounded-2xl border border-dashed border-line bg-paper-2/60 p-5 sm:p-6 opacity-90 select-none cursor-default">
             <div class="flex items-start justify-between gap-4">
               <div class="flex-1">
                 <div class="flex items-center gap-2 mb-1 flex-wrap">
-                  <span class="inline-flex items-center rounded-full bg-navy/10 text-navy text-xs font-medium px-2.5 py-1 border border-navy/20">تابستان ۱۴۰۵</span>
+                  <span class="inline-flex items-center rounded-full bg-paper-2 text-muted text-xs font-medium px-2.5 py-1 border border-line">تابستان ۱۴۰۵</span>
                   <span class="inline-flex items-center rounded-full bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1">به‌زودی</span>
                 </div>
-                <h3 class="text-base sm:text-lg font-semibold text-navy">آزمون ماز · پایه ششم</h3>
-                <p class="mt-1.5 text-sm text-ink-soft">دفترچه ۱ و ۲ · تمرین · نتیجه پس از تصحیح اضافه می‌شود</p>
-                <div class="mt-4 text-sm text-muted">آماده دریافت نتیجه و کارنامه کامل</div>
+                <h3 class="text-base sm:text-lg font-semibold text-muted">آزمون ماز · پایه ششم</h3>
+                <p class="mt-1.5 text-sm text-muted">دفترچه ۱ و ۲ · تمرین · هنوز برگزار نشده</p>
+                <div class="mt-4 text-sm text-muted">پس از تصحیح، کارنامه اینجا فعال می‌شود</div>
               </div>
-              <div class="shrink-0 text-navy text-xl opacity-40">←</div>
             </div>
-          </a>
+          </div>
 
-          <!-- Sampad 1405 -->
+          <!-- سمپاد ۱۴۰۵ — فعال -->
           <a href="1405/" class="card-hover block rounded-2xl border border-line bg-paper p-5 sm:p-6 shadow-[0_8px_30px_rgba(28,25,22,0.06)]">
             <div class="flex items-start justify-between gap-4">
               <div class="flex-1">
