@@ -1,1 +1,117 @@
-PLACEHOLDER_PROGRESS
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نمودار پیشرفت تحصیلی · امیرعلی عمارلو</title>
+  <meta name="theme-color" content="#1f3a4d" />
+  <link rel="icon" href="https://lh3.googleusercontent.com/d/1EUCRK_IHZdgbDlWxKYDru5IrVRNySs7C=w64" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: "#f3eee4", "paper-2": "#ebe4d6", ink: "#1c1916", "ink-soft": "#4a433c",
+            muted: "#7a7268", line: "#d4cbb8", navy: "#1f3a4d", ok: "#2f6b4f", "ok-bg": "#e4efe8",
+            bad: "#8b3a32", "bad-bg": "#f3e6e3",
+          },
+          fontFamily: { sans: ["Vazirmatn", "Tahoma", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body{margin:0;font-family:"Vazirmatn",Tahoma,sans-serif;background:#f3eee4;color:#1c1916;line-height:1.65}
+    table{width:100%;border-collapse:collapse}
+    th,td{border:1px solid #d4cbb8;padding:.45rem .55rem;text-align:right;font-size:.8rem}
+    th{background:#ebe4d6;font-weight:600}
+    .bar-wrap{display:flex;flex-direction:column;align-items:center;gap:.35rem;flex:1;min-width:4.2rem}
+    .bar{width:100%;max-width:3.25rem;border-radius:.5rem .5rem 0 0;min-height:4px}
+    .plan-ico{width:1.4rem;height:1.4rem;border-radius:9999px;object-fit:cover}
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <main class="min-h-screen bg-paper px-4 py-8 sm:py-12 text-ink sm:px-6">
+    <div class="mx-auto max-w-3xl">
+      <a href="./" class="inline-flex items-center gap-1.5 text-sm text-navy hover:underline mb-6">← بازگشت به صفحه اصلی</a>
+      <h1 class="text-xl sm:text-2xl font-semibold text-navy mb-6">📊 نمودار پیشرفت تحصیلی</h1>
+
+      <section class="rounded-2xl border border-line bg-paper p-5 sm:p-7 shadow-sm mb-8">
+        <p class="text-sm text-muted mb-1">درصد کل (وزن‌دار) · هدف: رشد تا آزمون ۱۴۰۶</p>
+        <p class="text-xs text-muted mb-5">ستون‌های خالی بعد از دور ۲ کمپلکس و آزمون‌های شبیه‌ساز پر می‌شوند.</p>
+        <div class="flex items-end justify-around gap-2 sm:gap-5 border-b border-line pb-2" style="height:14rem">
+          <div class="bar-wrap">
+            <span class="text-xs font-semibold tabular-nums text-navy">۳۶٫۴٪</span>
+            <div class="bar bg-navy/85" style="height:36.4%"></div>
+            <span class="text-xs text-muted text-center leading-tight">سمپاد<br/>فرم C</span>
+          </div>
+          <div class="bar-wrap">
+            <span class="text-xs font-semibold tabular-nums text-amber-800">~۴۷٪</span>
+            <div class="bar bg-amber-600/85" style="height:47%"></div>
+            <span class="text-xs text-muted text-center leading-tight">کمپلکس<br/>نمونه</span>
+          </div>
+          <div class="bar-wrap opacity-40">
+            <span class="text-xs text-muted">—</span>
+            <div class="bar bg-line" style="height:8%"></div>
+            <span class="text-xs text-muted text-center leading-tight">کمپلکس<br/>دور ۲</span>
+          </div>
+          <div class="bar-wrap opacity-40">
+            <span class="text-xs text-muted">—</span>
+            <div class="bar bg-line" style="height:8%"></div>
+            <span class="text-xs text-muted text-center leading-tight">شبیه‌ساز<br/>۱</span>
+          </div>
+        </div>
+        <p class="text-xs text-muted mt-4">کمپلکس نمونه: ~۱۴۶ سؤال از مباحث ۱۳۷–۱۴۷</p>
+      </section>
+
+      <section class="rounded-2xl border border-line bg-paper p-5 sm:p-6 shadow-sm mb-8 overflow-x-auto">
+        <h2 class="text-sm font-semibold text-navy mb-3">کمپلکس — دقت به تفکیک مبحث</h2>
+        <table>
+          <thead><tr><th>مبحث</th><th>دقت</th><th>وضعیت</th></tr></thead>
+          <tbody>
+            <tr><td>۱۳۷ مقایسه</td><td>~۷۹٪</td><td>خوب</td></tr>
+            <tr><td>۱۳۸ جدول</td><td>~۵۶٪</td><td>متوسط</td></tr>
+            <tr><td>۱۳۹ روابط</td><td>ضعیف</td><td>نیاز کار</td></tr>
+            <tr><td>۱۴۰ گزاره</td><td>~۲۹٪</td><td>ضعیف</td></tr>
+            <tr><td>۱۴۳ لانه کبوتری</td><td>~۶۰٪</td><td>متوسط</td></tr>
+            <tr><td>۱۴۴ سودوکو</td><td>~۶۷٪</td><td>قابل قبول</td></tr>
+            <tr><td>۱۴۵ جادویی</td><td>۱۰۰٪</td><td>قوت</td></tr>
+            <tr><td>۱۴۶ استدلال</td><td>~۴۰٪</td><td>ضعیف</td></tr>
+            <tr><td>۱۴۷ تصمیم‌گیری</td><td>~۲۴٪</td><td>خیلی ضعیف</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="grid gap-4 sm:grid-cols-2 mb-8">
+        <div class="rounded-2xl border border-line bg-ok-bg p-5">
+          <h2 class="text-sm font-semibold text-ok mb-3">قوت‌ها</h2>
+          <ul class="list-disc space-y-1.5 pr-4 text-sm">
+            <li>مربع جادویی و بخشی از سودوکو</li>
+            <li>مقایسه</li>
+            <li>دفترچه سرعت سمپاد بهتر از تحلیلی</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-line bg-bad-bg p-5">
+          <h2 class="text-sm font-semibold text-bad mb-3">ضعف‌ها</h2>
+          <ul class="list-disc space-y-1.5 pr-4 text-sm">
+            <li>گزاره و روابط منطقی</li>
+            <li>جدول چندشرطی</li>
+            <li>استدلال و تصمیم‌گیری</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="flex justify-center mb-8">
+        <a href="plan.html" class="inline-flex items-center gap-2 rounded-full bg-ok text-paper font-semibold text-sm px-6 py-3.5 shadow-lg">
+          <img src="https://lh3.googleusercontent.com/d/1-X2ZW5iPPbpZ1Dc69MK_RyPi4LGHE9J_=w64" alt="" class="plan-ico" width="22" height="22" />
+          برنامه قدم‌به‌قدم تا عید
+        </a>
+      </div>
+
+      <footer class="text-center text-xs text-muted pt-4 border-t border-line">به‌روزرسانی: ۱۰ مهر ۱۴۰۵</footer>
+    </div>
+  </main>
+</body>
+</html>
