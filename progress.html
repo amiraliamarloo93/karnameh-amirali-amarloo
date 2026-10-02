@@ -22,63 +22,82 @@
       },
     };
   </script>
-  <style>body{margin:0;font-family:"Vazirmatn",Tahoma,sans-serif;background:#f3eee4;color:#1c1916;line-height:1.65}</style>
+  <style>body{margin:0;font-family:"Vazirmatn",Tahoma,sans-serif;background:#f3eee4;color:#1c1916;line-height:1.65}
+  table{width:100%;border-collapse:collapse} th,td{border:1px solid #d4cbb8;padding:.45rem .55rem;text-align:right;font-size:.8rem}
+  th{background:#ebe4d6;font-weight:600}
+  </style>
 </head>
 <body class="font-sans antialiased">
   <main class="min-h-screen bg-paper px-4 py-8 sm:py-12 text-ink sm:px-6">
     <div class="mx-auto max-w-3xl">
       <a href="./" class="inline-flex items-center gap-1.5 text-sm text-navy hover:underline mb-6">← بازگشت به صفحه اصلی</a>
-
-      <h1 class="text-xl sm:text-2xl font-semibold text-navy mb-6">📊 نمودار پیشرفت تحصیلی</h1>
-
-      <!-- Chart placeholder -->
+      <h1 class="text-xl sm:text-2xl font-semibold text-navy mb-6">📊 پیشرفت تحصیلی</h1>
       <section class="rounded-2xl border border-line bg-paper p-5 sm:p-7 shadow-sm mb-8">
-        <p class="text-sm text-muted mb-4">نمودار ستونی نمرات آزمون‌ها (به‌زودی با داده‌های جدید به‌روز می‌شود)</p>
-        <div class="h-48 sm:h-64 flex items-end justify-around gap-3 border-b border-line pb-2">
-          <div class="flex flex-col items-center gap-2 w-16 sm:w-20">
-            <div class="w-full bg-navy/80 rounded-t" style="height:36.4%"></div>
-            <span class="text-xs text-muted">۱۴۰۵</span>
+        <p class="text-sm text-muted mb-4">نمره آزمون‌ها (درصد کل وزن‌دار)</p>
+        <div class="h-48 sm:h-56 flex items-end justify-around gap-4 border-b border-line pb-2">
+          <div class="flex flex-col items-center gap-2 w-20">
+            <div class="w-full bg-navy/80 rounded-t" style="height:36%"></div>
+            <span class="text-xs text-muted">سمپاد ۱۴۰۵</span>
             <span class="text-xs font-medium tabular-nums">۳۶٫۴٪</span>
           </div>
-          <div class="flex flex-col items-center gap-2 w-16 sm:w-20 opacity-40">
-            <div class="w-full bg-line rounded-t" style="height:10%"></div>
-            <span class="text-xs text-muted">۱۴۰۶</span>
+          <div class="flex flex-col items-center gap-2 w-20">
+            <div class="w-full bg-amber-600/80 rounded-t" style="height:47%"></div>
+            <span class="text-xs text-muted">کمپلکس جزئی</span>
+            <span class="text-xs font-medium tabular-nums">~۴۷٪</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 w-20 opacity-40">
+            <div class="w-full bg-line rounded-t" style="height:12%"></div>
+            <span class="text-xs text-muted">دور ۲ کمپلکس</span>
             <span class="text-xs">—</span>
           </div>
         </div>
+        <p class="text-xs text-muted mt-3">کمپلکس جزئی: حدود ۱۴۶ سؤال از مباحث ۱۳۷–۱۴۷</p>
       </section>
-
-      <!-- Strengths & Weaknesses -->
+      <section class="rounded-2xl border border-line bg-paper p-5 sm:p-6 shadow-sm mb-8 overflow-x-auto">
+        <h2 class="text-sm font-semibold text-navy mb-3">کمپلکس — دقت به تفکیک مبحث</h2>
+        <table>
+          <thead><tr><th>مبحث</th><th>دقت</th><th>وضعیت</th></tr></thead>
+          <tbody>
+            <tr><td>۱۳۷ مقایسه</td><td>~۷۹٪</td><td>خوب</td></tr>
+            <tr><td>۱۳۸ جدول</td><td>~۵۶٪</td><td>متوسط</td></tr>
+            <tr><td>۱۳۹ روابط</td><td>ضعیف</td><td>نیاز کار</td></tr>
+            <tr><td>۱۴۰ گزاره</td><td>~۲۹٪</td><td>ضعیف</td></tr>
+            <tr><td>۱۴۳ لانه کبوتری</td><td>~۶۰٪</td><td>متوسط</td></tr>
+            <tr><td>۱۴۴ سودوکو</td><td>~۶۷٪</td><td>قابل قبول</td></tr>
+            <tr><td>۱۴۵ جادویی</td><td>۱۰۰٪</td><td>قوت</td></tr>
+            <tr><td>۱۴۶ استدلال</td><td>~۴۰٪</td><td>ضعیف</td></tr>
+            <tr><td>۱۴۷ تصمیم‌گیری</td><td>~۲۴٪</td><td>خیلی ضعیف</td></tr>
+          </tbody>
+        </table>
+      </section>
       <section class="grid gap-4 sm:grid-cols-2 mb-8">
         <div class="rounded-2xl border border-line bg-ok-bg p-5">
           <h2 class="text-sm font-semibold text-ok mb-3">قوت‌ها</h2>
-          <ul class="list-disc space-y-1.5 pr-4 text-sm text-ink">
-            <li>املا، کلمهٔ مشترک، نقشه، حروف واژه: تقریباً کامل</li>
-            <li>رمز جدول را سریع فهمید</li>
-            <li>کمپلکس مبحث ۹۳ دنباله: حدود ۸۵٪ بعد از کلید</li>
-            <li>نزده‌های دفترچهٔ ۲ اغلب آخرِ بلوک بود، نه بی‌نظمی</li>
+          <ul class="list-disc space-y-1.5 pr-4 text-sm">
+            <li>مربع جادویی و بخشی از سودوکو</li>
+            <li>مقایسه</li>
+            <li>دفترچه سرعت سمپاد بهتر از تحلیلی</li>
           </ul>
         </div>
         <div class="rounded-2xl border border-line bg-bad-bg p-5">
           <h2 class="text-sm font-semibold text-bad mb-3">ضعف‌ها</h2>
-          <ul class="list-disc space-y-1.5 pr-4 text-sm text-ink">
-            <li>دفترچهٔ تحلیلی کلامی (مفهوم، بیت، هم‌خانواده)</li>
-            <li>برخورد خط و دایره: تقاطع خط‌ها را جا انداخت</li>
-            <li>شکل تو‌درتو (چاقالو / لاغرو): صفر از پنج</li>
-            <li>۲۰ غلط دفترچهٔ ۱ نمرهٔ منفی سنگین ساخت</li>
+          <ul class="list-disc space-y-1.5 pr-4 text-sm">
+            <li>گزاره و روابط منطقی</li>
+            <li>جدول چندشرطی</li>
+            <li>استدلال و تصمیم‌گیری</li>
           </ul>
         </div>
       </section>
-
-      <!-- News -->
       <section class="rounded-2xl border border-line bg-paper p-5 sm:p-6 mb-8">
-        <h2 class="text-sm font-semibold text-navy mb-3">خبرهای جدید</h2>
-        <p class="text-sm text-muted">فعلاً خبری ثبت نشده است. بعد از هر آزمون جدید اینجا اضافه می‌شود.</p>
+        <h2 class="text-sm font-semibold text-navy mb-3">خبرها</h2>
+        <ul class="text-sm space-y-2 list-disc pr-5">
+          <li>۱۰ مهر ۱۴۰۵: شروع برنامه تا عید · اسمارتیز</li>
+          <li>کمپلکس دور اول جزئی · دور دوم با پاسخبرگ</li>
+          <li>کلاس دوم: توان‌سه (سجاد انصاری اردلی)</li>
+          <li><a href="plan.html" class="text-navy underline">برنامه کامل ماه‌به‌ماه</a></li>
+        </ul>
       </section>
-
-      <footer class="text-center text-xs text-muted pt-4 border-t border-line">
-        نمودار پیشرفت تحصیلی · امیرعلی عمارلو
-      </footer>
+      <footer class="text-center text-xs text-muted pt-4 border-t border-line">به‌روزرسانی: ۱۰ مهر ۱۴۰۵</footer>
     </div>
   </main>
 </body>

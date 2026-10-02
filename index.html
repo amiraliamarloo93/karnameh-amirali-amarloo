@@ -26,102 +26,71 @@
     body { margin: 0; font-family: "Vazirmatn", Tahoma, sans-serif; background: #f3eee4; color: #1c1916; line-height: 1.65; }
     .card-hover { transition: transform .2s, box-shadow .2s; }
     .card-hover:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(28,25,22,.12); }
-    /* لیست آزمون‌ها وقتی زیاد شد اسکرول می‌شود */
-    .exam-list {
-      max-height: min(70vh, 520px);
-      overflow-y: auto;
-      overscroll-behavior: contain;
-      -webkit-overflow-scrolling: touch;
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-    .exam-list::-webkit-scrollbar { width: 6px; }
-    .exam-list::-webkit-scrollbar-track { background: transparent; }
-    .exam-list::-webkit-scrollbar-thumb { background: #d4cbb8; border-radius: 999px; }
+    .exam-list { max-height: min(70vh, 520px); overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
   </style>
 </head>
 <body class="font-sans antialiased">
   <main class="min-h-screen bg-paper px-4 py-6 sm:py-10 text-ink sm:px-6">
     <div class="mx-auto max-w-3xl">
-
-      <div class="flex justify-end mb-4">
-        <a href="hiva-hoosh.html" class="inline-flex items-center gap-2 rounded-full bg-navy text-paper text-xs sm:text-sm font-medium px-4 py-2 shadow-md hover:bg-[#2c536b] transition">
-          🎯 هیوا هوش
-        </a>
+      <div class="flex justify-end mb-4 gap-2 flex-wrap">
+        <a href="plan.html" class="inline-flex items-center gap-2 rounded-full bg-ok text-paper text-xs sm:text-sm font-medium px-4 py-2 shadow-md">📅 برنامه تا عید</a>
+        <a href="hiva-hoosh.html" class="inline-flex items-center gap-2 rounded-full bg-navy text-paper text-xs sm:text-sm font-medium px-4 py-2 shadow-md">🎯 هیوا هوش</a>
       </div>
-
-      <section class="rounded-2xl border border-line bg-paper p-5 sm:p-7 shadow-[0_12px_40px_rgba(28,25,22,0.08)] mb-8">
+      <section class="rounded-2xl border border-line bg-paper p-5 sm:p-7 shadow-sm mb-8">
         <h1 class="text-xl sm:text-2xl font-semibold text-navy text-center mb-5">صفحه شخصی تحصیلی امیرعلی عمارلو</h1>
         <div class="rounded-xl border border-line bg-paper-2 p-4 sm:p-5">
           <h2 class="text-sm font-semibold text-navy mb-4 border-b border-line pb-2">مشخصات دانش‌آموز</h2>
           <dl class="space-y-3 text-sm">
             <div class="flex justify-between gap-3"><dt class="text-muted">نام</dt><dd class="font-medium">امیرعلی عمارلو</dd></div>
             <div class="flex justify-between gap-3"><dt class="text-muted">پایه</dt><dd class="font-medium">ششم</dd></div>
-            <div class="flex justify-between gap-3"><dt class="text-muted">سال تحصیلی فعلی</dt><dd class="font-medium">۱۴۰۵ – ۱۴۰۶</dd></div>
+            <div class="flex justify-between gap-3"><dt class="text-muted">سال تحصیلی</dt><dd class="font-medium">۱۴۰۵ – ۱۴۰۶</dd></div>
+            <div class="flex justify-between gap-3"><dt class="text-muted">مدرسه</dt><dd class="font-medium">شاهد حضرت رسول اکرم (ص) · بجنورد</dd></div>
             <div class="flex justify-between items-center gap-3">
-              <dt class="text-muted">معلم</dt>
+              <dt class="text-muted">معلم هیوا</dt>
               <dd class="font-medium flex items-center gap-2">
-                <img src="https://lh3.googleusercontent.com/d/1nnRLoMkzX01zSG2M-qSDndkXRCrgYTwE=w80" alt="علیرضا راعی" class="w-8 h-8 rounded-full object-cover border border-line" />
+                <img src="https://lh3.googleusercontent.com/d/1nnRLoMkzX01zSG2M-qSDndkXRCrgYTwE=w80" alt="راعی" class="w-8 h-8 rounded-full object-cover border border-line" />
                 استاد علیرضا راعی
               </dd>
             </div>
+            <div class="flex justify-between gap-3"><dt class="text-muted">کلاس دوم</dt><dd class="font-medium">توان‌سه · سجاد انصاری اردلی</dd></div>
+            <div class="flex justify-between gap-3"><dt class="text-muted">منابع</dt><dd class="font-medium">کمپلکس + اسمارتیز نیوفیس ۱۴۰۵</dd></div>
           </dl>
         </div>
       </section>
-
       <section class="mb-8">
-        <h2 class="text-lg font-semibold text-navy mb-4">کارنامه‌های آزمون</h2>
-
-        <!-- لیست اسکرول‌پذیر برای وقتی آزمون‌ها زیاد شدند -->
+        <h2 class="text-lg font-semibold text-navy mb-4">کارنامه‌ها و وضعیت</h2>
         <div class="exam-list grid gap-4">
-
-          <!-- ماز ۱۴۰۵ — هنوز آزمون زده نشده؛ بدون لینک -->
-          <div class="rounded-2xl border border-dashed border-line bg-paper-2/60 p-5 sm:p-6 opacity-90 select-none cursor-default">
-            <div class="flex items-start justify-between gap-4">
-              <div class="flex-1">
-                <div class="flex items-center gap-2 mb-1 flex-wrap">
-                  <span class="inline-flex items-center rounded-full bg-paper-2 text-muted text-xs font-medium px-2.5 py-1 border border-line">تابستان ۱۴۰۵</span>
-                  <span class="inline-flex items-center rounded-full bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1">به‌زودی</span>
-                </div>
-                <h3 class="text-base sm:text-lg font-semibold text-muted">آزمون ماز · پایه ششم</h3>
-                <p class="mt-1.5 text-sm text-muted">دفترچه ۱ و ۲ · تمرین · هنوز برگزار نشده</p>
-                <div class="mt-4 text-sm text-muted">پس از تصحیح، کارنامه اینجا فعال می‌شود</div>
-              </div>
+          <div class="rounded-2xl border border-line bg-paper-2/80 p-5">
+            <div class="flex items-center gap-2 mb-1 flex-wrap">
+              <span class="rounded-full bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1">مهر ۱۴۰۵</span>
+              <span class="rounded-full border border-line text-muted text-xs px-2.5 py-1">جزئی</span>
             </div>
+            <h3 class="text-base font-semibold text-navy">کمپلکس · منطقی (نمونه)</h3>
+            <p class="mt-1.5 text-sm text-ink-soft">~۱۴۶ سؤال · دقت ~۴۷٪ · قوت: جادویی · ضعف: گزاره و تصمیم‌گیری</p>
           </div>
-
-          <!-- سمپاد ۱۴۰۵ — فعال -->
-          <a href="1405/" class="card-hover block rounded-2xl border border-line bg-paper p-5 sm:p-6 shadow-[0_8px_30px_rgba(28,25,22,0.06)]">
-            <div class="flex items-start justify-between gap-4">
-              <div class="flex-1">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="inline-flex items-center rounded-full bg-navy text-paper text-xs font-medium px-2.5 py-1">۱۴۰۵</span>
-                  <span class="text-xs text-muted">فرم C · شهریور</span>
-                </div>
-                <h3 class="text-base sm:text-lg font-semibold text-navy">آزمون ورودی پایه هفتم سمپاد (تمرین)</h3>
-                <p class="mt-1.5 text-sm text-ink-soft">هدف واقعی: آزمون ۱۴۰۶ · یک سال زودتر شرکت کرده</p>
-                <div class="mt-4 flex flex-wrap gap-3 text-sm">
-                  <span class="text-muted">نمره کل: <strong class="text-navy tabular-nums">۳۶٫۴٪</strong></span>
-                  <span class="text-muted">تحلیلی: <strong class="text-bad tabular-nums">۲۷٫۲٪</strong></span>
-                  <span class="text-muted">سرعت: <strong class="text-ok tabular-nums">۶۳٫۹٪</strong></span>
-                </div>
-              </div>
-              <div class="shrink-0 text-navy text-xl opacity-60">←</div>
+          <div class="rounded-2xl border border-dashed border-line bg-paper-2/60 p-5 opacity-90">
+            <h3 class="text-base font-semibold text-muted">آزمون ماز · ۶ شهریور</h3>
+            <p class="mt-1.5 text-sm text-muted">جواب‌ها دریافت شد · کارنامه عمومی با درخواست</p>
+          </div>
+          <a href="1405/" class="card-hover block rounded-2xl border border-line bg-paper p-5 shadow-sm">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="rounded-full bg-navy text-paper text-xs font-medium px-2.5 py-1">۱۴۰۵</span>
+              <span class="text-xs text-muted">فرم C · تمرین</span>
+            </div>
+            <h3 class="text-base font-semibold text-navy">سمپاد پایه هفتم (تمرین)</h3>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm">
+              <span class="text-muted">کل: <strong class="text-navy">۳۶٫۴٪</strong></span>
+              <span class="text-muted">تحلیلی: <strong class="text-bad">۲۷٫۲٪</strong></span>
+              <span class="text-muted">سرعت: <strong class="text-ok">۶۳٫۹٪</strong></span>
             </div>
           </a>
-
         </div>
       </section>
-
-      <div class="text-center mb-10">
-        <a href="progress.html" class="inline-flex items-center gap-2 rounded-full bg-navy text-paper font-semibold text-sm sm:text-base px-6 py-3.5 shadow-lg hover:bg-[#2c536b] transition">
-          📊 نمودار پیشرفت تحصیلی
-        </a>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center mb-10">
+        <a href="progress.html" class="inline-flex justify-center rounded-full bg-navy text-paper font-semibold text-sm px-6 py-3.5 shadow-lg">📊 نمودار پیشرفت</a>
+        <a href="plan.html" class="inline-flex justify-center rounded-full bg-ok text-paper font-semibold text-sm px-6 py-3.5 shadow-lg">📅 برنامه تا عید</a>
       </div>
-
-      <footer class="text-center text-xs text-muted pt-4 border-t border-line">
-        صفحه شخصی تحصیلی امیرعلی عمارلو · به‌روزرسانی: شهریور ۱۴۰۵
-      </footer>
+      <footer class="text-center text-xs text-muted pt-4 border-t border-line">به‌روزرسانی: ۱۰ مهر ۱۴۰۵</footer>
     </div>
   </main>
 </body>
